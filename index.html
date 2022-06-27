@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--Fuente-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<title>Ahorcado</title>
+	</head>
+	<body class="contenedor">
+
+		<header class="cabecera">
+			<h1><img src="img/alura_logo.png"></h1>
+		</header>
+
+		<main class="principal">
+
+			<section class="inicio">
+				<button class="boton_jugar">Iniciar juego</button>
+				<button class="boton_agregar_palabra">Agregar nueva palabra</button>
+			</section>
+
+			<section class="juego">
+				<canvas class="tablero"></canvas>
+				<div class="contenedor_botones">
+					<button class="boton_azul">Nuevo juego</button>
+					<button class="boton_blanco">Desistir</button>
+				</div>
+			</section>
+
+			<section class="agregar_palabra">				
+				<input type="text" name="nueva_palabra" placeholder="Ingrese una palabra" maxlength="8">
+				<div class="alerta">
+					<img src="img/icono_alerta.png">
+					<p>Máx. de 8 letras</p>
+				</div>
+				<div class="contenedor_botones">
+					<button class="boton_azul">Guardar y Empezar</button>
+					<button class="boton_blanco">Cancelar</button>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="pie_de_pagina">
+			<p>Desarrollado por Nelson Lotumolo</p>
+		</footer>
+
+	</body>
+</html>
